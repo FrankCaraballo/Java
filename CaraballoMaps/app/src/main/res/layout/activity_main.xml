@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        />
+
+    <EditText
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressEditText"
+        android:hint="Star Address / Marker"
+        android:layout_alignBottom="@+id/getAddressButton"
+        android:layout_alignLeft="@+id/map"
+        android:layout_alignStart="@+id/map"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Marker"
+        android:id="@+id/getAddressButton"
+        android:layout_below="@+id/map"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="showAddressMarker"/>
+
+    <EditText
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/finalAddressEditText2"
+        android:hint="Destination Address"
+        android:layout_alignBottom="@+id/getDirectionsButton"
+        android:layout_alignLeft="@+id/addressEditText"
+        android:layout_alignStart="@+id/addressEditText"
+        android:ems="10"
+        android:inputType="textPostalAddress"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Directions"
+        android:id="@+id/getDirectionsButton"
+        android:layout_below="@+id/getAddressButton"
+        android:layout_alignRight="@+id/getAddressButton"
+        android:layout_alignEnd="@+id/getAddressButton"
+        android:onClick="getDirections"/>
+
+</RelativeLayout>
