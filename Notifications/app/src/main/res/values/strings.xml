@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Notifications</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="alert_in_five_btn_text_view">Alert in 5 seconds</string>
+    <string name="stop_notification_btn">Stop Notification</string>
+    <string name="show_notificaiton_btn">Show Notification</string>
+
+</resources>
